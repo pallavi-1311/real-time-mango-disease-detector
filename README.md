@@ -1,41 +1,76 @@
-# Real-Time Detection of Mango Leaf Diseases
+#  Real-Time Detection of Mango Leaf Diseases
 
-This project presents a deep learning-based approach for identifying diseases in mango leaves using the EfficientNetB0 Convolutional Neural Network. It is aimed at improving agricultural outcomes by enabling early detection of diseases such as anthracnose and rust, which affect mango yield and crop health.
+This project focuses on identifying diseases in mango leaves using a deep learning approach built with EfficientNetB0. It’s designed to help farmers and agricultural researchers detect issues early, reduce crop loss, and improve yield.
 
-# Project Objective
-To develop an automated, real-time disease detection system that can classify healthy and diseased mango leaves using CNN-based transfer learning, improving decision-making for farmers.
+We’ve trained the model on both Kaggle datasets and real-time field images. It performs well in classifying diseases like anthracnose, rust, and also healthy leaves — even under real-world conditions like poor lighting and noisy backgrounds.
 
-# Key Features
-- Trained on both Kaggle datasets and real-time field images
-- Uses transfer learning with EfficientNetB0 for feature extraction
-- Achieved 92.7% training accuracy, 89.04% validation accuracy, and 84.76% test accuracy
-- Preprocessing includes contrast/brightness enhancement and resizing
-- Includes advanced data augmentation: rotation, flip, zoom, brightness, and contrast
-- Tested with Decision Tree, Random Forest, MobileNet for comparison
+---
 
-# Model Architecture
-- **EfficientNetB0** (frozen layers) for feature extraction
-- **GlobalAveragePooling** for dimensionality reduction
-- **Dropout (0.5)** for regularization
-- **Dense layer with Softmax** for classification into 3 classes
+##  Project Goals
 
-# Technologies Used
-- Python
-- TensorFlow / Keras
-- EfficientNetB0 (Transfer Learning)
+- Detect mango leaf diseases **automatically and accurately**
+- Build a lightweight and real-time system using **transfer learning**
+- Make the solution practical for use in **real agricultural environments**
+
+---
+
+##  What’s Inside
+
+- A **CNN model based on EfficientNetB0**
+- **Preprocessing techniques** like brightness, contrast adjustment
+- **Data augmentation** to make the model more robust
+- A clean and readable **Jupyter Notebook** with all the steps
+
+---
+
+##  Model Highlights
+
+| Phase           | Accuracy     |
+|----------------|--------------|
+| Training       | 92.70%       |
+| Validation     | 89.04%       |
+| Real-time Test | 84.76%       |
+
+Compared with other models:
+- **EfficientNetB0**: Balanced and reliable
+- **Decision Tree** & **Random Forest**: High accuracy but may overfit
+- **MobileNet**: Lightweight but less accurate in our case
+
+---
+
+##  Dataset Used
+
+- **Kaggle Mango Leaf Disease Dataset**
+- **Real-time images** taken in natural farm environments
+
+---
+
+##  Technologies
+
+- Python 
+- TensorFlow & Keras
+- Google Colab
 - OpenCV
 - Matplotlib
 
-# Dataset
-- Mango leaf disease dataset from **Kaggle**
-- Real-time images taken manually under field conditions
-
-# Future Improvements
-- Improve multi-class accuracy for visually similar diseases
-- Use attention mechanisms or ensemble models
-- Expand training dataset with more diverse real-field data
+---
 
 
+## Why This Matters
+
+Early detection of plant diseases can save crops and reduce pesticide usage. Our model can act as a quick and effective diagnostic tool for farmers — especially in resource-constrained areas.
+
+We’ve focused on making the system:
+- Accurate 
+- Easy to use 
+
+---
+
+## Future Plans
+
+- Add more disease classes
+- Improve real-time performance with more diverse datasets
+- Try attention mechanisms to boost classification on challenging images
 
 
 
