@@ -23,7 +23,6 @@ To develop an automated, real-time disease detection system that can classify he
 - Python
 - TensorFlow / Keras
 - EfficientNetB0 (Transfer Learning)
-- Google Colab
 - OpenCV
 - Matplotlib
 
